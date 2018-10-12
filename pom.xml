@@ -65,7 +65,7 @@
 					<!-- <propertiesFilePath>src/test/resources/allure.properties</propertiesFilePath> -->
 					<reportVersion>2.3.1</reportVersion>
 					<resultsDirectory>D:\\git\\allure-testng-sample\\allure-results</resultsDirectory>
-					<reportDirectory>./target/allure-report</reportDirectory>
+				<!--  	<reportDirectory>./target/allure-report</reportDirectory>-->
 				</configuration>
 			</plugin>
 		</plugins>
