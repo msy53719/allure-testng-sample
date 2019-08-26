@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sample</groupId>
@@ -66,8 +65,13 @@
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
 					<systemProperties>
+						<property>
+							<name>allure.results.directory</name>
+							<value>./target/allure-results</value>
+						</property>
 					</systemProperties>
 				</configuration>
+
 				<dependencies>
 					<dependency>
 						<groupId>org.aspectj</groupId>
@@ -85,8 +89,7 @@
 					<!-- <propertiesFilePath>src/test/resources/allure.properties</propertiesFilePath> -->
 					<reportVersion>${allure.version}</reportVersion>
 					<resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-					<!--<reportDirectory>${project.basedir}/target/allure-report</reportDirectory> -->
-
+					<reportDirectory>${project.build.directory}/allure-report</reportDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
