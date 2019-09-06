@@ -1,3 +1,4 @@
 mvn allure:serve
 mvn allure:report
---allow-file-access-from-files
+--allow-file-access-from-files google
+firefox  about:cofig privacy.file_unique_origin  

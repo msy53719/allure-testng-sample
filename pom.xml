@@ -10,6 +10,7 @@
 		<testng.version>6.14.3</testng.version>
 		<allure.version>2.12.1</allure.version>
 		<hamcrest.version>1.3</hamcrest.version>
+		 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
@@ -57,10 +58,10 @@
 							<value>false</value>
 						</property>
 					</properties>
-					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
